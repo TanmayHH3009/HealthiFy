@@ -62,7 +62,7 @@ const RenderField = ({ field, props }: { field: any; props: CustomProps }) => {
             <Input
               placeholder={placeholder}
               {...field}
-              className="shad-input border-0 text-gray-500"
+              className="shad-input border-0 text-gray-50"
             />
           </FormControl>
         </div>
