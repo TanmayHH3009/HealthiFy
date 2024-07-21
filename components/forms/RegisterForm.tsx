@@ -72,7 +72,7 @@ if(patient) router.push(`/patients/${user.$id}/new-appointment`)
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-12 flex-1">
         
         <section className="space-y-4">
-          <h1 className="header">Welcome</h1>
+          <h1 className="header text-gray-50">Welcome</h1>
           <p className="text-dark-700">Let Us Know About You </p>
         </section>
 
@@ -266,7 +266,7 @@ if(patient) router.push(`/patients/${user.$id}/new-appointment`)
 
         <section className="space-y-4">
           <div className="mb-9 space-y-1">
-            <h2 className="sub-header">Identification and Verification</h2>
+            <h2 className="sub-header text-gray-50">Identification and Verification</h2>
           </div>
         </section>
         <div className="flex flex-col gap-6 xl:flex-row">

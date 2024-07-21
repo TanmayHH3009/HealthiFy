@@ -62,7 +62,7 @@ const RenderField = ({ field, props }: { field: any; props: CustomProps }) => {
             <Input
               placeholder={placeholder}
               {...field}
-              className="shad-input border-0 text-gray-50"
+              className="shad-input border-0 text-gray-500"
             />
           </FormControl>
         </div>
@@ -125,7 +125,7 @@ const RenderField = ({ field, props }: { field: any; props: CustomProps }) => {
           <Select onValueChange={field.onChange} defaultValue={field.value}>
             <FormControl>
               <SelectTrigger
-              className="shad-select-trigger">
+              className="shad-select-trigge text-gray-50">
                 <SelectValue placeholder={props.placeholder} />
               </SelectTrigger>
             </FormControl>
