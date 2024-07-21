@@ -87,7 +87,11 @@ if(patient) router.push(`/patients/${user.$id}/new-appointment`)
           fieldType={FormFieldType.INPUT}
           control={form.control}
           name="name"
-          label="Full Name"
+          label={
+            <span>
+              Full Name<span className="text-red-700">*</span>
+            </span>
+          }
           placeholder="Ravi Kumar"
           iconSrc="/assets/icons/user.svg"
           iconAlt="user"
@@ -97,7 +101,11 @@ if(patient) router.push(`/patients/${user.$id}/new-appointment`)
             fieldType={FormFieldType.INPUT}
             control={form.control}
             name="email"
-            label="Email"
+            label={
+              <span>
+                Email <span className="text-red-700">*</span>
+              </span>
+            }
             placeholder="ravikumar@gmail.com"
             iconSrc="/assets/icons/email.svg"
             iconAlt="user"
@@ -107,7 +115,11 @@ if(patient) router.push(`/patients/${user.$id}/new-appointment`)
             fieldType={FormFieldType.PHONE_INPUT}
             control={form.control}
             name="phone"
-            label="Mobile"
+            label={
+              <span>
+                Mobile<span className="text-red-700">*</span>
+              </span>
+            }
             placeholder="+91 67038 49348"
             iconAlt="user"
           />
@@ -117,7 +129,11 @@ if(patient) router.push(`/patients/${user.$id}/new-appointment`)
             fieldType={FormFieldType.DATE_PICKER}
             control={form.control}
             name="birthDate"
-            label="Date of Birth"
+            label={
+              <span>
+                Date of Birth<span className="text-red-700">*</span>
+              </span>
+            }
             placeholder="DD/MM/YYYY"
           />
 
@@ -125,7 +141,11 @@ if(patient) router.push(`/patients/${user.$id}/new-appointment`)
             fieldType={FormFieldType.SKELETON}
             control={form.control}
             name="gender"
-            label="Gender"
+            label={
+              <span>
+                Gender <span className="text-red-700">*</span>
+              </span>
+            }
             renderSkeleton={(field) => (
               <FormControl>
                 <RadioGroup
@@ -152,14 +172,22 @@ if(patient) router.push(`/patients/${user.$id}/new-appointment`)
             fieldType={FormFieldType.INPUT}
             control={form.control}
             name="address"
-            label="Address"
+            label={
+              <span>
+                Address <span className="text-red-700">*</span>
+              </span>
+            }
             placeholder="221B Bakers Street, London"
           />
           <CustomFormField
             fieldType={FormFieldType.INPUT}
             control={form.control}
             name="occupation"
-            label="Occupation"
+            label={
+              <span>
+                Occupation <span className="text-red-700">*</span>
+              </span>
+            }
             placeholder="Software Engineer"
           />
         </div>
@@ -169,7 +197,11 @@ if(patient) router.push(`/patients/${user.$id}/new-appointment`)
             fieldType={FormFieldType.INPUT}
             control={form.control}
             name="emergencyContactName"
-            label="Emergency Contact Name"
+            label={
+              <span>
+                Emergency Contact Name<span className="text-red-700">*</span>
+              </span>
+            }
             placeholder="Gaurdian's Name"
           />
 
@@ -177,7 +209,11 @@ if(patient) router.push(`/patients/${user.$id}/new-appointment`)
             fieldType={FormFieldType.PHONE_INPUT}
             control={form.control}
             name="emergencyContactNumber"
-            label="Emergency Contact Number"
+            label={
+              <span>
+                Emergency Contact Number<span className="text-red-700">*</span>
+              </span>
+            }
             placeholder="+91 12345 12345"
           />
         </div>
@@ -193,7 +229,11 @@ if(patient) router.push(`/patients/${user.$id}/new-appointment`)
             fieldType={FormFieldType.SELECT}
             control={form.control}
             name="primaryPhysician"
-            label="Primary Physician"
+            label={
+              <span>
+                Primary Physician<span className="text-red-700">*</span>
+              </span>
+            }
             placeholder="Select a Physician"
           >
             {Doctors.map((doctor) => (
@@ -218,14 +258,22 @@ if(patient) router.push(`/patients/${user.$id}/new-appointment`)
             fieldType={FormFieldType.INPUT}
             control={form.control}
             name="insuranceProvider"
-            label="Insurance Provider"
+            label={
+              <span>
+                Insurance Provider<span className="text-red-700">*</span>
+              </span>
+            }
             placeholder="LIC India"
           />
           <CustomFormField
             fieldType={FormFieldType.INPUT}
             control={form.control}
             name="insurancePolicyNumber"
-            label="Insurance Policy Number"
+            label={
+              <span>
+                Insurance Policy Number<span className="text-red-700">*</span>
+              </span>
+            }
             placeholder="123456789"
           />
         </div>
@@ -274,7 +322,11 @@ if(patient) router.push(`/patients/${user.$id}/new-appointment`)
             fieldType={FormFieldType.SELECT}
             control={form.control}
             name="identificationType"
-            label="Identification Type"
+            label={
+              <span>
+                Identification Type<span className="text-red-700">*</span>
+              </span>
+            }
             placeholder="Select a Identification Type"
           >
             {IdentificationTypes.map((type) => (
@@ -287,7 +339,11 @@ if(patient) router.push(`/patients/${user.$id}/new-appointment`)
             fieldType={FormFieldType.INPUT}
             control={form.control}
             name="identificationNumber"
-            label="Identification Number"
+            label={
+              <span>
+                Identification Number<span className="text-red-700">*</span>
+              </span>
+            }
             placeholder="1234     1234    1234"
           />
         </div>
@@ -313,19 +369,34 @@ if(patient) router.push(`/patients/${user.$id}/new-appointment`)
           fieldType={FormFieldType.CHECKBOX}
           control={form.control}
           name="treatmentConsent"
-          label="I consent to Treatment"
+        //  label="I consent to Treatment"
+        label={
+          <span>
+            I consent to Treatment<span className="text-red-700">*</span>
+          </span>
+        }
         />
         <CustomFormField
           fieldType={FormFieldType.CHECKBOX}
           control={form.control}
           name="disclosureConsent"
-          label="I consent to disclousure of information"
+          //label="I consent to disclousure of information"
+          label={
+            <span>
+              I consent to disclousure of information<span className="text-red-700">*</span>
+            </span>
+          }
         />
         <CustomFormField
           fieldType={FormFieldType.CHECKBOX}
           control={form.control}
           name="privacyConsent"
-          label="I consent to Privacy Policy"
+        //  label="I consent to Privacy Policy"
+        label={
+          <span>
+           I consent to Privacy Policy<span className="text-red-700">*</span>
+          </span>
+        }
         />
 
 <div className="flex justify-center gap-6">

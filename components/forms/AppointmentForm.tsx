@@ -153,7 +153,11 @@ let buttonLebel;switch(type){
             fieldType={FormFieldType.SELECT}
             control={form.control}
             name="primaryPhysician"
-            label="Primary Physician"
+            label={
+              <span>
+                Primary Physician<span className="text-red-700">*</span>
+              </span>
+            }
             placeholder="Select a Physician"
           >
             {Doctors.map((doctor) => (
@@ -176,7 +180,12 @@ let buttonLebel;switch(type){
           fieldType={FormFieldType.DATE_PICKER}
           control={form.control}
           name="schedule"
-          label="Expected Appointment Date and Time"
+          // label="Expected Appointment Date and Time"
+          label={
+            <span>
+             Expected Appointment Date and Time <span className="text-red-700">*</span>
+            </span>
+          }
           showTimeSelect
           dateFormat="MM/dd/yyyy - h:mm aa"
           />
@@ -186,7 +195,11 @@ let buttonLebel;switch(type){
             fieldType={FormFieldType.TEXTAREA}
             control={form.control}
             name="reason"
-            label="Reason for Appointment"
+            label={
+              <span>
+                Reason for Appointment<span className="text-red-700">*</span>
+              </span>
+            }
             placeholder="Enter reason for Appointment"
           />
           <CustomFormField

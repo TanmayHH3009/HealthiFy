@@ -68,7 +68,11 @@ setIsLoading(false);
           fieldType={FormFieldType.INPUT}
           control={form.control}
           name="name"
-          label="Full name"
+          label={
+            <span>
+             Full Name <span className="text-red-700">*</span>
+            </span>
+          }
           placeholder="Ravi Kumar"
           iconSrc="/assets/icons/user.svg"
           iconAlt="user"
@@ -79,7 +83,11 @@ setIsLoading(false);
           fieldType={FormFieldType.INPUT}
           control={form.control}
           name="email"
-          label="Email"
+          label={
+            <span>
+              Email <span className="text-red-700">*</span>
+            </span>
+          }
           placeholder="ravikumar@gmail.com"
           iconSrc="/assets/icons/email.svg"
           iconAlt="user"
@@ -89,7 +97,11 @@ setIsLoading(false);
           fieldType={FormFieldType.PHONE_INPUT}
           control={form.control}
           name="phone"
-          label="Mobile"
+          label={
+            <span>
+              Mobile <span className="text-red-700">*</span>
+            </span>
+          }
           placeholder="+91 67038 49348"
 
           iconAlt="user"
