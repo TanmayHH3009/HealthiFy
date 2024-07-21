@@ -30,17 +30,17 @@ const doctor = Doctors.find((doc)=>doc.name === appointment.primaryPhysician)
                 width={200} 
                 alt='success'
                 />
-            <h2 className='header mb-6 max-w-[600px] text-center'>
+            <h2 className='header mb-6 max-w-[600px] text-center text-gray-50'>
                 Your <span className='text-green-500'>appointment  request </span>has been successfully submitted!
 
             </h2>
-            <p>
+            <p className='text-green-200'>
                 We will get back to you as soon as possible.
             </p>
             </section>
 
             <section className='request-details'>
-                <p>
+                <p className='text-blue-200'>
                     Requested appointment details:
                 </p>
                 <div className='flex items-center gap-3'>
@@ -50,7 +50,7 @@ const doctor = Doctors.find((doc)=>doc.name === appointment.primaryPhysician)
                   height={100}
                   width={100}
                   className='size-12' />
-                  <p className='whitespace-nowrap'> Dr. {doctor?.name}</p>
+                  <p className='whitespace-nowrap text-white'> Dr. {doctor?.name}</p>
                 </div>
                 <div className='flex gap-2'>
                     <Image 
@@ -59,7 +59,7 @@ const doctor = Doctors.find((doc)=>doc.name === appointment.primaryPhysician)
                     height={24}
                     width={24}
                     />
-                    <p>
+                    <p className=' text-blue-400'>
                         {formatDateTime(appointment.schedule).dateTime}
                     </p>
                 </div>
