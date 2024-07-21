@@ -184,7 +184,7 @@ if(patient) router.push(`/patients/${user.$id}/new-appointment`)
 
         <section className="space-y-4">
           <div className="mb-9 space-y-1">
-            <h2 className="sub-header">Medical Information</h2>
+            <h2 className="sub-header text-gray-50">Medical Information</h2>
           </div>
         </section>
 
@@ -305,7 +305,7 @@ if(patient) router.push(`/patients/${user.$id}/new-appointment`)
 
         <section className="space-y-4">
           <div className="mb-9 space-y-1">
-            <h2 className="sub-header">Consent And Privacy</h2>
+            <h2 className="sub-header text-gray-50">Consent And Privacy</h2>
           </div>
         </section>
 
