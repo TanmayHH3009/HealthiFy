@@ -78,7 +78,7 @@ const RenderField = ({ field, props }: { field: any; props: CustomProps }) => {
             withCountryCallingCode
             value={field.value as E164Number | undefined}
             onChange={field.onChange}
-            className="input-phone"
+            className="input-phone text-gray-50"
           />
         </FormControl>
       );
@@ -87,7 +87,7 @@ const RenderField = ({ field, props }: { field: any; props: CustomProps }) => {
         return (
           <FormControl>
             <Textarea placeholder={placeholder} {...field}
-            className='shad-textArea'
+            className='shad-textArea text-gray-50'
             disabled={props.disabled}/>
           </FormControl>
         )
@@ -101,7 +101,7 @@ const RenderField = ({ field, props }: { field: any; props: CustomProps }) => {
             height={24}
             width={24}
             alt="user"
-            className="ml-2"
+            className="ml-2 text-gray-50"
           />
           <FormControl>
             <DatePicker
@@ -110,7 +110,7 @@ const RenderField = ({ field, props }: { field: any; props: CustomProps }) => {
               dateFormat={dateFormat ?? "MM/dd/yyyy"}
               showTimeSelect={showTimeSelect ?? false}
               timeInputLabel="Time:"
-              wrapperClassName="date-picker"
+              wrapperClassName="date-picker text-gray-50"
             />
           </FormControl>
         </div>
@@ -129,7 +129,7 @@ const RenderField = ({ field, props }: { field: any; props: CustomProps }) => {
                 <SelectValue placeholder={props.placeholder} />
               </SelectTrigger>
             </FormControl>
-            <SelectContent className="shad-select-content">
+            <SelectContent className="shad-select-content text-gray-50">
               {props.children}
             </SelectContent>
           </Select>
@@ -144,7 +144,7 @@ const RenderField = ({ field, props }: { field: any; props: CustomProps }) => {
                 checked={field.value}
                 onCheckedChange={field.onChange}
               />
-              <label htmlFor={props.name} className="checkbox-label">
+              <label htmlFor={props.name} className="checkbox-labeltext-gray-50">
                 {props.label}
               </label>
             </div>
