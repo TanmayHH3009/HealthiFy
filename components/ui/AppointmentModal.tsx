@@ -34,7 +34,7 @@ const AppointmentModal = ({type,
     </DialogTrigger>
     <DialogContent className='shad-dialog sm:max-w-md'>
       <DialogHeader className='mb-4 space-y-3'>
-        <DialogTitle className='capitalize text-green-400'>{type}   Appointment</DialogTitle>
+        <DialogTitle className={`capitalize ${type==='schedule' ? 'text-green-500' : 'text-red-500'}`}>{type}   Appointment</DialogTitle>
         <DialogDescription className='text-gray-200'>
          Please fill in the following Details to {type} an Appointment
         </DialogDescription>
