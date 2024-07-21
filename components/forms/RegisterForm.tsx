@@ -78,7 +78,7 @@ if(patient) router.push(`/patients/${user.$id}/new-appointment`)
 
         <section className="space-y-4">
           <div className="mb-9 space-y-1">
-            <h2 className="sub-header">Personal Information</h2>
+            <h2 className="sub-header text-gray-400">Personal Information</h2>
           </div>
           {/* <p className="text-dark-700">Let Us Know About You </p> */}
         </section>
